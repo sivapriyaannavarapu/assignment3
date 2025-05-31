@@ -1,0 +1,313 @@
+/* .container {
+  display: flex;
+  gap:10px;
+  background-color: #F6F8F9;
+}
+ 
+.left_side_container {
+  width: 80%;
+  padding: 10px;
+}
+ 
+.right_side_container {
+  width: 20%;
+  background-color: #d0d0d0;
+  padding: 10px;
+  height: calc(100vh - 72px);
+}
+
+.nav-drop{
+    display: flex;
+    flex-direction: coloumn;
+    justify-content: space-between;
+}
+
+.year-dropdown select {
+    padding: 6px 14px;
+    border: none;
+    background-color: #3e2eff;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #D2D2D2;
+    backdrop-filter: blur(14.699999809265137px);
+    border: 1px solid #D2D2D2;
+}
+
+.nav-bar button{
+    display: flex;
+    padding: 9px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    color:#000000;
+   background-color: #F6F8F9;
+    
+}
+
+.nav-bar button.active {
+  background-color: #FFFFFF; 
+  color: #3425FF;
+  font-weight: 600; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+.nav-bar button:hover:not(.active) {
+  background-color: #E8ECEF; 
+  color: #000000;
+}
+
+.Payments {
+    display: flex;
+    flex-direction: coloumn;
+    padding: 20px;
+    border-radius: 12px;
+    align-items: center;
+    gap: 6px;
+}
+.Payments img {
+    width: 64px;
+    height: 64px;
+}
+.Payments h1 {
+font-weight: 700;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+margin-bottom: 5px;
+
+}
+.Payments p {
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+}
+
+.sub-tabs {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+  margin-left:20px;
+}
+
+.sub-tab {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c2c2c;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+
+.sub-tab-content {
+  margin-top: 20px;
+}
+
+
+.sub-tab.active {
+  color: #3425FF;
+  font-weight: 700;
+}
+
+.sub-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3425FF;
+}
+
+
+
+ */
+
+ /* Main container with flex layout */
+.container {
+  display: flex;
+  gap: 10px;
+  background-color: #F6F8F9;
+  height: 100%; 
+  
+}
+
+/* Left side container for navigation and content */
+.left_side_container {
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box; /* Prevent padding issues */
+   
+}
+
+/* Right side container for optional content */
+.right_side_container {
+  width: 20%;
+  background-color: #d0d0d0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Navigation and dropdown container */
+.nav-drop {
+  display: flex;
+  flex-direction: row; /* Corrected typo: 'coloumn' to 'column' */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px; /* Add gap for better spacing */
+}
+
+/* Year dropdown styling */
+.year-dropdown select {
+  padding: 10px 17px;
+    border: none;
+    background-color: #3e2eff;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    margin-top: 8px;
+}
+
+/* Navigation bar for main tabs */
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #D2D2D2; /* Removed duplicate border */
+  backdrop-filter: blur(14.7px); /* Standardized blur value */
+  background-color: #F6F8F9;
+  padding: 5px; /* Add padding for better appearance */
+}
+
+/* Main tab buttons (for state-based approach) */
+.nav-bar button,
+.nav-bar a {
+  display: flex;
+  padding: 9px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  color: #000000;
+  background-color: #F6F8F9;
+  text-decoration: none; /* For NavLink in React Router */
+  font-size: 14px;
+  font-weight: 500;
+  border: none; /* Ensure no border on buttons */
+  cursor: pointer;
+}
+
+/* Active state for main tabs */
+.nav-bar button.active,
+.nav-bar a.active {
+  background-color: #FFFFFF;
+  color: #3425FF;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover state for main tabs (non-active) */
+.nav-bar button:hover:not(.active),
+.nav-bar a:hover:not(.active) {
+  background-color: #E8ECEF;
+  color: #000000;
+}
+
+/* Payments section styling */
+.Payments {
+    display: flex;
+    flex-direction: coloumn;
+    padding: 20px;
+    border-radius: 12px;
+    align-items: center;
+    gap: 6px;
+}
+.Payments img {
+    width: 64px;
+    height: 64px;
+}
+.Payments h1 {
+font-weight: 700;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+margin-bottom: 5px;
+
+}
+.Payments p {
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+}
+/* Sub-tabs container */
+.sub-tabs {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+/* Sub-tab buttons (for state-based approach) */
+.sub-tabs button,
+.sub-tabs a {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c2c2c;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  text-decoration: none; /* For NavLink in React Router */
+}
+
+/* Active state for sub-tabs */
+.sub-tabs button.active,
+.sub-tabs a.active {
+  color: #3425FF;
+  font-weight: 700;
+}
+
+/* Active sub-tab underline */
+.sub-tabs button.active::after,
+.sub-tabs a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3425FF;
+}
+
+/* Sub-tab content area */
+.sub-tab-content {
+  padding: 10px; /* Add padding for better spacing */
+}

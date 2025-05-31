@@ -1,0 +1,160 @@
+.concession-page {
+  padding: 20px;
+  max-width: 82%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  box-sizing: border-box; /* good practice */
+}
+
+.text-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-buttons text{
+    display: flex;
+    flex-direction: row;
+}
+ 
+.text-buttons h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+ 
+.text-buttons p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+}
+ 
+.button-group {
+  display: flex;
+  justify-content: flex-start; 
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* so buttons wrap on narrow screens */
+  gap: 10px; /* space between buttons when wrapped */
+}
+ 
+.requests-btn,
+.history-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex-shrink: 0; /* prevent shrinking */
+  white-space: nowrap; /* keep button text on one line */
+}
+ 
+.requests-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-right: 10px;
+}
+ 
+.requests-btn:hover {
+  background-color: #0056b3;
+}
+ 
+.history-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+ 
+.history-btn:hover {
+  background-color: #e0e0e0;
+}
+ 
+/* Card-style container with scroll */
+.concession-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-height: 520px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+ 
+/* Two column form */
+.concession-form {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping on narrow widths */
+  gap: 40px;
+  box-sizing: border-box;
+}
+ 
+/* Column structure */
+.column {
+  flex: 1 1 300px; /* flex-grow, flex-shrink, flex-basis */
+  min-width: 260px; /* allow some shrinking */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+ 
+/* Form groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+ 
+.form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+  width: 100%; /* fluid inputs */
+  box-sizing: border-box;
+}
+ 
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+ 
+.textarea {
+  min-height: 125px;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+}
+ 
+.full-width {
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+ 
+.print-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+ 
+.print-btn:hover {
+  background-color: #0056b3;
+}
+ 

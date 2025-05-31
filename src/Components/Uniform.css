@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+ 
+.uniform-wrapper {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+ 
+.uniform-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+ 
+.uniform-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+ 
+.uniform-header p {
+    margin: 0.5rem 0 0;
+    color: #555;
+    font-size: 0.95rem;
+    max-width: 600px;
+}
+ 
+.uniform-header-buttons {
+    display: flex;
+    gap: 0.75rem;
+}
+ 
+.track-btn,
+.history-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #1e40af;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+ 
+.history-btn {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+ 
+.uniform-card {
+    background: linear-gradient(135deg, #fff, #f0f0f0, #e0e0ff, #ffe0e0);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    overflow-y: auto;
+}
+ 
+.uniform-form {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+ 
+.left-column,
+.right-column {
+    flex: 1;
+}
+ 
+.form-group {
+    margin-bottom: 1rem;
+}
+ 
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+ 
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background-color: #fff;
+}
+ 
+textarea {
+    resize: none;
+}
+ 
+.form-footer {
+    text-align: center;
+}
+ 
+.print-btn {
+    padding: 0.6rem 2rem;
+    border: none;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}

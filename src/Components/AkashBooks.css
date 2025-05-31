@@ -1,0 +1,105 @@
+    .akash-books-container {
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+ 
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+ 
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+ 
+.top-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+ 
+.track-btn {
+  background-color: #2f2fff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+.history-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+.form-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+}
+ 
+.form-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+ 
+.form-column {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+ 
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+ 
+.form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+ 
+.print-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+ 
+.print-button button {
+  background-color: #2f2fff;
+  color: white;
+  padding: 10px 32px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+ 
